@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@theme {
+  --color-maincolor: #008E93;
+  --font-playfair: "Playfair Display", serif;
+  --font-lato: "Lato", sans-serif;
+}
