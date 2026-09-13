@@ -1,13 +1,15 @@
-export default function Categories() {
-  const baseUrl = import.meta.env.BASE_URL;
+import womenImg from "../../assets/images/women.jpg";
+import menImg from "../../assets/images/men.jpg";
+import casualImg from "../../assets/images/Rectangle 133.png";
 
+export default function Categories() {
   return (
     <section className="w-full px-12 py-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
         <div className="flex flex-col gap-9">
           <div className="relative h-93.5 overflow-hidden cursor-pointer">
             <img
-              src={`${baseUrl}assets/images/women.jpg`}
+              src={womenImg}
               alt="Formal Woman"
               className="w-full h-full object-cover object-top"
             />
@@ -19,7 +21,7 @@ export default function Categories() {
 
           <div className="relative h-93.5 overflow-hidden cursor-pointer">
             <img
-              src={`${baseUrl}assets/images/men.jpg`}
+              src={menImg}
               alt="Formal Men"
               className="w-full h-full object-cover"
             />
@@ -32,7 +34,7 @@ export default function Categories() {
 
         <div className="relative h-195 overflow-hidden cursor-pointer">
           <img
-            src={`${baseUrl}assets/images/Rectangle 133.png`}
+            src={casualImg}
             alt="Casual Style"
             className="w-full h-full object-cover"
           />
